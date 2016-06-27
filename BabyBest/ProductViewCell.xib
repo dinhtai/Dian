@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_cell_product_selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="fqF-m9-0RU">
+                        <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FB637" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ou-Yn-1qg">
+                        <rect key="frame" x="8" y="5" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="AZn-8t-jbi"/>
+                            <constraint firstAttribute="width" constant="68" id="ohI-oe-c9d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="604" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgD-S4-leL">
+                        <rect key="frame" x="8" y="2" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="am1-4E-2lt"/>
+                            <constraint firstAttribute="height" constant="21" id="c0j-vH-fbG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agH-94-xtY">
+                        <rect key="frame" x="8" y="15" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Fg8-vp-afB"/>
+                            <constraint firstAttribute="width" constant="68" id="LHj-Yo-CLB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="AgD-S4-leL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="1cq-AF-cDM"/>
+                <constraint firstItem="AgD-S4-leL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2yc-Hm-vya"/>
+                <constraint firstItem="5ou-Yn-1qg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="9yk-fy-TWq"/>
+                <constraint firstAttribute="trailing" secondItem="fqF-m9-0RU" secondAttribute="trailing" id="JrP-EE-pfA"/>
+                <constraint firstItem="fqF-m9-0RU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qh3-1F-AlV"/>
+                <constraint firstItem="fqF-m9-0RU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="S8K-vf-M7F"/>
+                <constraint firstAttribute="bottom" secondItem="fqF-m9-0RU" secondAttribute="bottom" id="ZEr-uh-a3K"/>
+                <constraint firstItem="5ou-Yn-1qg" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="fLc-ZC-KtI"/>
+                <constraint firstAttribute="bottom" secondItem="agH-94-xtY" secondAttribute="bottom" constant="-6" id="oWf-i3-9AR"/>
+                <constraint firstItem="agH-94-xtY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pGD-q7-Hub"/>
+            </constraints>
+            <connections>
+                <outlet property="img_bgCell" destination="fqF-m9-0RU" id="z4G-QC-nYZ"/>
+                <outlet property="lbPrice" destination="agH-94-xtY" id="GBg-Ma-cri"/>
+                <outlet property="lbProductId" destination="AgD-S4-leL" id="s3v-JZ-lTF"/>
+                <outlet property="lbTitle" destination="5ou-Yn-1qg" id="f08-Go-0s1"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_cell_product_selected.png" width="78" height="27"/>
+    </resources>
+</document>

@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  BabyBest
+//
+//  Created by TaiND on 3/22/16.
+//  Copyright © 2016 TaiND. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/******************************** Block Type *******************/
+typedef void (^VoidBlock)(void);
+typedef void (^DataBlock)(id data);
+
+
+#define IS_NOT_NULL(obj) ( (obj != (id)[NSNull null]) && (obj != nil) )
+#define kToken  @"kToken"
+#define K_ContentType_JSON @"application/json"
+
+#endif /* PrefixHeader_pch */
